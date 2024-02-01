@@ -1,0 +1,72 @@
+1. Test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+CREATE TABLE employee (
+	id int PRIMARY KEY,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+)
+
+2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+insert into employee (id, name, birthday, email) values (1, 'Esmeralda', '1985-08-22', null);
+insert into employee (id, name, birthday, email) values (2, 'Fanchette', '1982-12-03', null);
+insert into employee (id, name, birthday, email) values (3, 'Max', '1982-02-13', null);
+insert into employee (id, name, birthday, email) values (4, 'Massimo', null, null);
+insert into employee (id, name, birthday, email) values (5, 'Kandace', '1983-08-16', null);
+insert into employee (id, name, birthday, email) values (6, 'Ephrem', '1981-11-22', 'eberg5@ow.ly');
+insert into employee (id, name, birthday, email) values (7, 'Mikaela', '1984-06-30', null);
+insert into employee (id, name, birthday, email) values (8, 'Mace', '1988-08-20', null);
+insert into employee (id, name, birthday, email) values (9, 'Amie', '1983-02-08', 'abenford8@altervista.org');
+insert into employee (id, name, birthday, email) values (10, 'Emelina', '1987-03-02', null);
+insert into employee (id, name, birthday, email) values (11, 'Dominick', '1982-04-01', null);
+insert into employee (id, name, birthday, email) values (12, 'Wernher', '1988-05-19', null);
+insert into employee (id, name, birthday, email) values (13, 'Bess', '1981-08-29', null);
+insert into employee (id, name, birthday, email) values (14, 'Kerrill', '1981-10-10', null);
+insert into employee (id, name, birthday, email) values (15, 'Shani', '1986-06-11', null);
+insert into employee (id, name, birthday, email) values (16, 'Weston', '1984-04-22', null);
+insert into employee (id, name, birthday, email) values (17, 'Beatrix', null, null);
+insert into employee (id, name, birthday, email) values (18, 'Ketti', '1983-07-05', null);
+insert into employee (id, name, birthday, email) values (19, 'Sean', '1986-02-16', null);
+insert into employee (id, name, birthday, email) values (20, 'Maddi', '1980-05-29', 'mberksj@4shared.com');
+insert into employee (id, name, birthday, email) values (21, 'Mignonne', '1989-03-29', null);
+insert into employee (id, name, birthday, email) values (22, 'Joelie', '1980-04-11', null);
+insert into employee (id, name, birthday, email) values (23, 'Kipp', '1981-10-23', null);
+insert into employee (id, name, birthday, email) values (24, 'Kenon', null, null);
+insert into employee (id, name, birthday, email) values (25, 'Susanna', '1985-12-11', null);
+insert into employee (id, name, birthday, email) values (26, 'Arlen', '1984-07-15', 'amachargp@webeden.co.uk');
+insert into employee (id, name, birthday, email) values (27, 'Kalil', '1985-11-17', null);
+insert into employee (id, name, birthday, email) values (28, 'Staffard', '1980-04-16', null);
+insert into employee (id, name, birthday, email) values (29, 'Barbi', '1980-10-15', null);
+insert into employee (id, name, birthday, email) values (30, 'Lucienne', '1985-02-02', null);
+insert into employee (id, name, birthday, email) values (31, 'Darryl', '1985-02-10', null);
+insert into employee (id, name, birthday, email) values (32, 'Denny', '1985-12-29', null);
+insert into employee (id, name, birthday, email) values (33, 'Phoebe', '1989-09-18', null);
+insert into employee (id, name, birthday, email) values (34, 'Tommie', null, null);
+insert into employee (id, name, birthday, email) values (35, 'Nickolai', '1985-09-25', null);
+insert into employee (id, name, birthday, email) values (36, 'Lacey', '1985-08-06', null);
+insert into employee (id, name, birthday, email) values (37, 'Sydney', null, null);
+insert into employee (id, name, birthday, email) values (38, 'Gerhardine', '1982-01-28', null);
+insert into employee (id, name, birthday, email) values (39, 'Serene', '1981-07-23', null);
+insert into employee (id, name, birthday, email) values (40, 'Reece', '1988-12-12', null);
+insert into employee (id, name, birthday, email) values (41, 'Maggie', '1989-12-24', null);
+insert into employee (id, name, birthday, email) values (42, 'Eleanore', '1984-11-14', 'emomery15@de.vu');
+insert into employee (id, name, birthday, email) values (43, 'Herta', '1984-07-10', null);
+insert into employee (id, name, birthday, email) values (44, 'Papagena', '1985-10-11', null);
+insert into employee (id, name, birthday, email) values (45, 'Howard', '1989-11-26', null);
+insert into employee (id, name, birthday, email) values (46, 'Jessee', '1982-11-05', null);
+insert into employee (id, name, birthday, email) values (47, 'Dori', '1981-01-27', null);
+insert into employee (id, name, birthday, email) values (48, 'Nadiya', '1983-12-12', null);
+insert into employee (id, name, birthday, email) values (49, 'Zarah', null, null);
+insert into employee (id, name, birthday, email) values (50, 'Devonne', '1985-06-29', null);
+
+3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+UPDATE employee
+SET name = 'Esmeralda - updatedData'
+WHERE name = 'Esmeralda'
+
+4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+DELETE FROM employee
+WHERE birthday >= '1988-01-01'
